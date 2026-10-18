@@ -1,0 +1,8 @@
+a=input("первый набор: ").split()
+b=input("второй набор: ").split()
+s1=set(a)
+s2=set(b)
+print("общие:", list(s1&s2))
+print("только в первом:", list(s1-s2))
+print("только во втором:", list(s2-s1))
+print("все кроме общих:", list(s1^s2))
